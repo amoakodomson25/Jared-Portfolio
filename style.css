@@ -6,15 +6,19 @@
   padding: 0;
   box-sizing: border-box;
 }
-
 .header {
-  padding: 50px 45px;
+  padding: 60px 150px 50px 150px;
+}
+.header .navbar {
+  display: flex;
+  justify-content: center;
 }
 .header .navbar a {
+  display: block;
   text-decoration: none;
   color: black;
-  margin: 0 6px;
-  transition: 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  margin: 0 20px 0 0;
+  transition: 0.1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 .header .navbar a.active,
 .header .navbar a:hover {
