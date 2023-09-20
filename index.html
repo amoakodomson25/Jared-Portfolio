@@ -16,15 +16,17 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="icon" href="assets/logo.jpg" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="media.css">
     <!--Scripts-->
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <!--Title-->
     <title>Jared Amoako</title>
   </head>
   <body>
-    <div class="header">
+    <div class="header" id="desktop-nav">
       <div class="logo">Jared Amoako</div>
       <div class="navbar">
         <a href="#about">About </a>
@@ -33,7 +35,21 @@
         <a href="#">Contact</a>
       </div>
     </div>
+    <div class="header" id="phone-nav">
+      <div class="logo"><img src="assets/logo.jpg" ></div>
 
+      <div class="ham-icon" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="ham-navbar">
+        <a href="#about" onclick="toggleMenu()">About </a>
+        <a href="#gallery" onclick="toggleMenu()">Gallery</a>
+        <a href="#" onclick="toggleMenu()">Resume </a>
+        <a href="#" onclick="toggleMenu()">Contact</a>
+      </div>
+    </div>
     <div class="page one">
       <!--
       <div class="image">
@@ -45,11 +61,34 @@
     -->
       <div class="info">
         <div class="block">
-          <h4>Hi, Im</h4>
-          <h1>Jared Amoako</h1>
-          <h4>Electrical Engineer</h4>
+          <h4  
+          data-aos="fade-down"
+          data-aos-offset="200"
+          data-aos-delay="10"
+          data-aos-duration="1000"
+          data-aos-easing="ease-in-out">Hi, Im</h4>
+          <h1
+          data-aos="fade-down"
+          data-aos-offset="200"
+          data-aos-delay="10"
+          data-aos-duration="1200"
+          data-aos-easing="ease-in-out"
+          >Jared Amoako</h1>
+          <h4
+          data-aos="fade-up"
+          data-aos-offset="200"
+          data-aos-delay="10"
+          data-aos-duration="1500"
+          data-aos-easing="ease-in-out"
+          >Electrical Engineer</h4>
 
-          <div class="links">
+          <div class="links"
+          data-aos="fade-up"
+          data-aos-offset="200"
+          data-aos-delay="10"
+          data-aos-duration="2000"
+          data-aos-easing="ease-in-out"
+          >
             <a href="#" target="_blank" rel="noopener noreferrer">
               <i class="fa-solid fa-at"></i>
             </a>
@@ -61,23 +100,43 @@
     </div>
     <div class="page two" id="about">
       <div class="flex-column">
-      <h4>know more</h4>
-      <h2>About Me</h2>
+      <h4
+      data-aos="fade-down"
+      data-aos-offset="200"
+      data-aos-delay="10"
+      data-aos-duration="800"
+      data-aos-easing="ease-in-out"
+      >know more</h4>
+      <h2
+      data-aos="fade-right"
+      data-aos-offset="200"
+      data-aos-delay="10"
+      data-aos-duration="900"
+      data-aos-easing="ease-in-out"
+      >About Me</h2>
       <div class="slider-container">
-        <div class="slider-image">
+        <div class="slider-image"
+        data-aos="fade-up"
+        data-aos-offset="200"
+        data-aos-delay="10"
+        data-aos-duration="1300"
+        data-aos-easing="ease-in-out"
+        >
           <div class="swiper-one">
             <!-- Additional required wrapper -->
             <div class="swiper-wrapper">
               <!-- Slides -->
               <div class="swiper-slide"><img src="assets/Images/photo (10).jpg" alt=""></div>
               <div class="swiper-slide"><img src="assets/Images/photo (8).jpg" alt=""></div>
-            
-              <div class="swiper-pagination"></div>
-
             </div>
         </div>
         </div>
-        <div class="slider-info">
+        <div class="slider-info"
+        data-aos="fade-left"
+        data-aos-offset="200"
+        data-aos-delay="10"
+        data-aos-duration="1200"
+        data-aos-easing="ease-in-out">
           <div class="educational">
             <h2>Educational</h2>
             <p>
@@ -86,7 +145,8 @@
               ducimus fugit nostrum rem similique natus doloribus animi 
               consequuntur ex aspernatur rerum corrupti tenetur ab.</p>
           </div>
-          <div class="personal"><h2>Personal</h2>
+          <div class="personal">
+          <h2>Personal</h2>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. 
               Perferendis laudantium debitis porro magni quis totam,
@@ -102,61 +162,14 @@
       <div class="flex-column">
         <h4>my pictures</h4>
         <h2>Gallery</h2>
-<!--
-        <div class="gallery-container">
-        <div class="swiper mySwiper2">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <img src="assets/Images/photo (1).jpg" />
-            </div>
-            <div class="swiper-slide">
-              <img src="assets/Images/photo (11).jpg" />
-            </div>
-            <div class="swiper-slide">
-              <img src="assets/Images/photo (12).jpg" />
-            </div>
-            <div class="swiper-slide">
-              <img src="assets/Images/photo (2).jpg" />
-            </div>
-            <div class="swiper-slide">
-              <img src="assets/Images/photo (5).jpg" />
-            </div>
-            <div class="swiper-slide">
-              <img src="assets/Images/photo (8).jpg" />
-            </div>
-            <div class="swiper-slide">
-              <img src="assets/Images/photo (9).jpg" />
-            </div>
-          </div>
-          <div class="swiper-button-next"></div>
-          <div class="swiper-button-prev"></div>
-        </div>
-        <div thumbsSlider="" class="swiper mySwiper">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <img src="assets/Images/photo (1).jpg" />
-            </div>
-            <div class="swiper-slide">
-              <img src="assets/Images/photo (11).jpg" />
-            </div>
-            <div class="swiper-slide">
-              <img src="assets/Images/photo (12).jpg" />
-            </div>
-            <div class="swiper-slide">
-              <img src="assets/Images/photo (2).jpg" />
-            </div>
-            <div class="swiper-slide">
-              <img src="assets/Images/photo (5).jpg" />
-            </div>
-            <div class="swiper-slide">
-              <img src="assets/Images/photo (8).jpg" />
-            </div>
-            <div class="swiper-slide">
-              <img src="assets/Images/photo (9).jpg" />
-            </div>
-          </div>
-        </div>
--->
+    </div>
+    </div>
+
+    <div class="page four">
+      <div class="flex-column">
+        <h4>let's connect</h4>
+        <h2>Contact me</h2>
+    </div>
     </div>
 
 
@@ -187,7 +200,11 @@
     });
   */
 
-  </script>
-
+    </script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script src="nav.js"></script>
   </body>
 </html>
