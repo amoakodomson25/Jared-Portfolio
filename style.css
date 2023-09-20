@@ -122,6 +122,13 @@ html {
   transform: translateY(0px);
 }
 
+#desktop-nav {
+  display: flex;
+}
+#phone-nav {
+  display: none;
+}
+
 .page {
   height: 96vh;
   padding-top: 4vh;
