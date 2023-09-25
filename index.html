@@ -19,24 +19,30 @@
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="icon" href="assets/logo.jpg" />
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="media.css">
+    <link rel="stylesheet" href="media.css" />
     <!--Scripts-->
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <!--Title-->
     <title>Jared Amoako</title>
   </head>
+
   <body>
     <div class="header" id="desktop-nav">
       <div class="logo">Jared Amoako</div>
       <div class="navbar">
         <a href="#about">About </a>
-        <a href="#gallery">Gallery</a>
-        <a href="#">Resume </a>
         <a href="#">Contact</a>
+        <a
+          href="assets/cv/Jared's main resume.pdf"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Download CV
+        </a>
       </div>
     </div>
     <div class="header" id="phone-nav">
-      <div class="logo"><img src="assets/logo.jpg" ></div>
+      <div class="logo"><img src="assets/logo.jpg" /></div>
 
       <div class="ham-icon" onclick="toggleMenu()">
         <span></span>
@@ -45,54 +51,84 @@
       </div>
       <div class="ham-navbar">
         <a href="#about" onclick="toggleMenu()">About </a>
-        <a href="#gallery" onclick="toggleMenu()">Gallery</a>
-        <a href="#" onclick="toggleMenu()">Resume </a>
         <a href="#" onclick="toggleMenu()">Contact</a>
+        <a
+          href="assets/cv/Jared's main resume.pdf"
+          onclick="toggleMenu()"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Download CV
+        </a>
       </div>
     </div>
     <div class="page one">
-      <!--
-      <div class="image">
-        <img
-          src="assets/Images/photo (13).jpg"
-          alt="A selfie of me"
-        />
-      </div>
-    -->
       <div class="info">
         <div class="block">
-          <h4  
-          data-aos="fade-down"
-          data-aos-offset="200"
-          data-aos-delay="10"
-          data-aos-duration="1000"
-          data-aos-easing="ease-in-out">Hi, Im</h4>
-          <h1
-          data-aos="fade-down"
-          data-aos-offset="200"
-          data-aos-delay="10"
-          data-aos-duration="1200"
-          data-aos-easing="ease-in-out"
-          >Jared Amoako</h1>
           <h4
-          data-aos="fade-up"
-          data-aos-offset="200"
-          data-aos-delay="10"
-          data-aos-duration="1500"
-          data-aos-easing="ease-in-out"
-          >Electrical Engineer</h4>
-
-          <div class="links"
-          data-aos="fade-up"
-          data-aos-offset="200"
-          data-aos-delay="10"
-          data-aos-duration="2000"
-          data-aos-easing="ease-in-out"
+            data-aos="fade-down"
+            data-aos-offset="200"
+            data-aos-delay="10"
+            data-aos-duration="1000"
+            data-aos-easing="ease-in-out"
           >
-            <a href="#" target="_blank" rel="noopener noreferrer">
+            Hi, Im
+          </h4>
+          <h1
+            data-aos="fade-down"
+            data-aos-offset="200"
+            data-aos-delay="10"
+            data-aos-duration="1200"
+            data-aos-easing="ease-in-out"
+          >
+            Jared Amoako
+          </h1>
+          <h4
+            data-aos="fade-up"
+            data-aos-offset="200"
+            data-aos-delay="10"
+            data-aos-duration="1500"
+            data-aos-easing="ease-in-out"
+          >
+            Electrical Engineer
+          </h4>
+
+          <div
+            class="links"
+            data-aos="fade-up"
+            data-aos-offset="200"
+            data-aos-delay="10"
+            data-aos-duration="2000"
+            data-aos-easing="ease-in-out"
+          >
+            <a
+              href="mailto:amoakojared99@gmail.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <i class="fa-solid fa-at"></i>
             </a>
+            <a
+              href="https://github.com/Jar8d"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i class="fa-brands fa-github"></i>
+            </a>
+            <a
+              href="https://www.linkedin.com/in/amoako-jared/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i class="fa-brands fa-linkedin"></i>
+            </a>
 
+            <a
+              href="assets/cv/Jared's main resume.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i class="fa-solid fa-file-arrow-down"></i>
             </a>
           </div>
         </div>
@@ -100,106 +136,138 @@
     </div>
     <div class="page two" id="about">
       <div class="flex-column">
-      <h4
-      data-aos="fade-down"
-      data-aos-offset="200"
-      data-aos-delay="10"
-      data-aos-duration="800"
-      data-aos-easing="ease-in-out"
-      >know more</h4>
-      <h2
-      data-aos="fade-right"
-      data-aos-offset="200"
-      data-aos-delay="10"
-      data-aos-duration="900"
-      data-aos-easing="ease-in-out"
-      >About Me</h2>
-      <div class="slider-container">
-        <div class="slider-image"
-        data-aos="fade-up"
-        data-aos-offset="200"
-        data-aos-delay="10"
-        data-aos-duration="1300"
-        data-aos-easing="ease-in-out"
+        <h2
+          data-aos="fade-right"
+          data-aos-offset="200"
+          data-aos-delay="10"
+          data-aos-duration="900"
+          data-aos-easing="ease-in-out"
         >
-          <div class="swiper-one">
-            <!-- Additional required wrapper -->
-            <div class="swiper-wrapper">
-              <!-- Slides -->
-              <div class="swiper-slide"><img src="assets/Images/photo (10).jpg" alt=""></div>
-              <div class="swiper-slide"><img src="assets/Images/photo (8).jpg" alt=""></div>
+          ABOUT ME
+        </h2>
+        <div class="slider-container">
+          <div
+            class="slider-image"
+            data-aos="fade-up"
+            data-aos-offset="200"
+            data-aos-delay="10"
+            data-aos-duration="1300"
+            data-aos-easing="ease-in-out"
+          >
+            <div class="swiper-one">
+              <!-- Additional required wrapper -->
+              <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">
+                  <img src="assets/Images/photo (10).jpg" alt="" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="assets/Images/photo (1).jpg" alt="" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="assets/Images/photo (11).jpg" alt="" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="assets/Images/photo (12).jpg" alt="" />
+                </div>
+              </div>
             </div>
-        </div>
-        </div>
-        <div class="slider-info"
-        data-aos="fade-left"
-        data-aos-offset="200"
-        data-aos-delay="10"
-        data-aos-duration="1200"
-        data-aos-easing="ease-in-out">
-          <div class="educational">
-            <h2>Educational</h2>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-              Perferendis laudantium debitis porro magni quis totam,
-              ducimus fugit nostrum rem similique natus doloribus animi 
-              consequuntur ex aspernatur rerum corrupti tenetur ab.</p>
           </div>
-          <div class="personal">
-          <h2>Personal</h2>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-              Perferendis laudantium debitis porro magni quis totam,
-              ducimus fugit nostrum rem similique natus doloribus animi 
-              consequuntur ex aspernatur rerum corrupti tenetur ab.</p></div>
+          <div
+            class="slider-info"
+            data-aos="fade-left"
+            data-aos-offset="200"
+            data-aos-delay="10"
+            data-aos-duration="1200"
+            data-aos-easing="ease-in-out"
+          >
+            <div class="comtainer">
+              <div class="swiper-two">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="box">
+                      <h2>Personal</h2>
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Perferendis laudantium debitis porro magni quis totam,
+                        ducimus fugit nostrum rem similique natus doloribus
+                        animi
+                      </p>
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        At rem consequuntur numquam, quia explicabo quod
+                        pariatur ab nisi eius amet atque tenetur repudiandae?
+                        Quibusdam a enim iusto ratione nulla sapiente?
+                      </p>
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        At rem consequuntur numquam, quia explicabo quod
+                        pariatur ab nisi eius amet atque tenetur repudiandae?
+                        Quibusdam a enim iusto ratione nulla sapiente?
+                      </p>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="box">
+                      <h2>Educational</h2>
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Perferendis laudantium debitis porro magni quis totam,
+                        ducimus fugit nostrum rem similique natus doloribus
+                        animi consequuntur ex aspernatur rerum corrupti tenetur
+                        ab.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="box">
+                      <h2>Achievements</h2>
+                      <p>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing
+                        elit. Ipsum fuga obcaecati illo error non incidunt.
+                        Tempore odio officiis expedita sunt doloribus nam a
+                        sequi consequatur minima aliquam? Nemo, provident nulla?
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-pagination"></div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-      
-    </div>
-
-    <div class="page three" id="gallery">
-      <div class="flex-column">
-        <h4>my pictures</h4>
-        <h2>Gallery</h2>
-    </div>
-    </div>
-
-    <div class="page four">
+    <div class="page three">
       <div class="flex-column">
         <h4>let's connect</h4>
         <h2>Contact me</h2>
-    </div>
+      </div>
     </div>
 
-
-    <script>    
-    const swiper = new Swiper(".swiper-one", {
+    <script>
+      const swiper = new Swiper(".swiper-one", {
         direction: "horizontal",
         loop: true,
         autoplay: {
           delay: 5000,
           disableOnInteraction: false,
         },
-      });/*
-      var swiper_a = new Swiper(".mySwiper", {
-      spaceBetween: 10,
-      slidesPerView: 4,
-      freeMode: true,
-      watchSlidesProgress: true,
-    });
-    var swiper_b = new Swiper(".mySwiper2", {
-      spaceBetween: 10,
-      navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-      },
-      thumbs: {
-        swiper: swiper,
-      },
-    });
-  */
-
+      });
+    </script>
+    <script>
+      const swiper1 = new Swiper(".swiper-two", {
+        direction: "horizontal",
+        loop: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
     </script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
